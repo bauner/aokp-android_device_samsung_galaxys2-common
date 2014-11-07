@@ -25,7 +25,7 @@ COMMONPROPS=../galaxys2-common/proprietary-files.txt
 
 mkdir -p ../../../vendor/$VENDOR/$COMMON/proprietary
 
-echo "Pulling common files..."
+echo "copy common files..."
 for FILE in `cat $COMMONPROPS | grep -v ^# | grep -v ^$`; do
     DIR=`dirname $FILE`
     if [ ! -d $COMMONBASE/$DIR ]; then
